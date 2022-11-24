@@ -1,0 +1,23 @@
+--單筆新增
+--Insert into exam(school, score, type) values('建中', 33.8, 1)
+--多筆新增
+-- Insert into exam(school, score, type) values('建中', 33.8, 1);
+-- Insert into exam(school, score, type) values('北一女', 33.8, 2);
+-- Insert into exam(school, score, type) values('師大附中男', 33.0, 1);
+-- Insert into exam(school, score, type) values('師大附中女', 33.6, 2);
+-- Insert into exam(school, score, type) values('中山女高', 31.7, 2);
+-- Insert into exam(school, score, type) values('成功高中', 31.6, 1);
+-- Insert into exam(school, score, type) values('松山高中', 30.6, 3);
+-- Insert into exam(school, score, type) values('大同高中', 29.8, 3);
+-- Insert into exam(school, score, type) values('政大附中', 29.6, 3);
+--全部查詢
+--Select * from exam
+--全部查詢(指定欄位)
+--Select score, school, type from exam
+--限制查詢
+--Select score, school, type from exam Where score <= 33 and type = 1
+--Select score, school, type from exam Where score <= 33 and (type = 1 or type = 3)
+--Select score, school, type from exam Where score <= 33 and type in (1, 3) 
+--Select score, school, type from exam Where score <= 33 and type in (1, 3) order by score asc
+--Select score, school, type from exam Where score <= 33 and type in (1, 3) order by score desc
+Select score, school, type from exam Where score <= 33 and type in (1, 3) order by type, score desc

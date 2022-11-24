@@ -14,7 +14,7 @@ public class Dog {
     }
 
     void eat(Food food) { //生存技巧
-        System.out.println("%s喜歡吃%s\n",  kind,  food.name );
+        System.out.printf("%s喜歡吃%s\n",  kind, food.name );
         
     }
     int calc(int  x , int  y){

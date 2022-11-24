@@ -7,7 +7,7 @@ import java.sql.DriverManager;
 
 public class CRUD {
     public static void main(String[] args) throws Exception {
-        String url = "jdbc:derby://localhost:1527/1527";
+        String url = "jdbc:derby://localhost:1527/Demo";
         String user = "app";
         String password = "1234";
         Connection conn = DriverManager.getConnection(url, user, password);
