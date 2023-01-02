@@ -13,7 +13,7 @@ public class CRUD4 {
     private static Connection conn;
 
     public CRUD4() throws Exception {   //建構子
-        String url = "jdbc:derby://localhost:1527/1527";
+        String url = "jdbc:derby://localhost:1527/test";
         String user = "app";
         String password = "1234";
         conn = DriverManager.getConnection(url, user, password);
